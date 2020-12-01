@@ -15,7 +15,7 @@ import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import SearchIcon from '@material-ui/icons/Search';
 import EventIcon from '@material-ui/icons/Event';
-import { Link, Route, BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { useState } from 'react';
 
 const useStyles = makeStyles((theme) => ({
