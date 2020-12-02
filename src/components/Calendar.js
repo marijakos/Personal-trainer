@@ -11,7 +11,6 @@ const ColoredDateCellWrapper = ({ children }) =>
     },
   })
 
-
 function MyCalendar()  {
 
     const [trainings, setTrainings] = useState([]);
@@ -35,20 +34,6 @@ function MyCalendar()  {
         .catch(err => console.error(err))
 
     }
-
-    /*const events = trainings.map((training) =>
-        training =
-        {
-
-          title: training.activity,
-          start: moment(training.date).toDate(),
-          end: moment(training.date).add(training.duration, 'minutes').toDate(),
-          resource: training.customer.firstname
-        }
-    );
-    console.log('events:', events);*/
-
-
 
     return (
         <Calendar

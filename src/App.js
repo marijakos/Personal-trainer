@@ -18,7 +18,6 @@ import SearchIcon from '@material-ui/icons/Search';
 import EventIcon from '@material-ui/icons/Event';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { useState } from 'react';
-//import { Calendar } from '@material-ui/pickers';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,8 +32,6 @@ const useStyles = makeStyles((theme) => ({
 
 
 }));
-
-
 
 const StyledMenu = withStyles({
   paper: {

@@ -20,7 +20,6 @@ function Alert(props) {
     return <MuiAlert elevation={6} variant="filled"  {...props} />;
 }
 
-
 const useStyles = makeStyles((theme) => ({
     Iconbutton: {
       margin: theme.spacing(1),
@@ -81,7 +80,6 @@ function Customers () {
         }
     ]
 
-
     const getCustomers = () => {
         fetch('https://customerrest.herokuapp.com/api/customers')
         .then(response => response.json())
@@ -129,7 +127,6 @@ function Customers () {
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify(newTraining)
         })
-        //.then(_=> getTrainings())
         .catch(err => console.error(err))
         .then(_ => setMsg(<Alert onClose={handleClose} severity="success">Successfully added training</Alert>))
         .then(_ => setOpen(true))
@@ -163,7 +160,6 @@ function Customers () {
 
     return(
         <div>
-
             <div className="ag-theme-material" style={{height: '700px', width: '80%',  margin: 'auto', paddingTop: '30px'}}>
                 <AddCustomer addCustomer={addCustomer} />
                 <Autocomplete
@@ -190,8 +186,6 @@ function Customers () {
                     pagination={true}
                     paginationPageSize={10}
                     animateRows="true"
-
-
                 >
                 </AgGridReact>
                 <Snackbar

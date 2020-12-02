@@ -13,7 +13,6 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import MuiAlert from '@material-ui/lab/Alert';
 
-
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled"  {...props} />;
 }
@@ -32,8 +31,6 @@ function Trainings () {
 
     const classes = useStyles();
     const gridRef = useRef();
-
-
 
     useEffect (() => {
         if (loading) {
@@ -103,9 +100,6 @@ function Trainings () {
         }
     }
 
-
-
-
     const handleClose = () => {
         setOpen(false);
     }
@@ -135,7 +129,6 @@ function Trainings () {
 
     return (
         <div className="ag-theme-material" style={{height: '700px', width: '50%', margin: 'auto', paddingTop: '30px'}}>
-
             <Autocomplete
                 options={options.sort((a, b) => -b.firstLetter.localeCompare(a.firstLetter))}
                 groupBy={(option) => option.firstLetter}
@@ -158,7 +151,6 @@ function Trainings () {
                 animateRows="true"
                 pagination={true}
                 paginationPageSize={10}
-
             >
             </AgGridReact>
             <Snackbar

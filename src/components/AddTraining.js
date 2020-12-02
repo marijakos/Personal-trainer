@@ -10,7 +10,6 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DateFnsUtils from '@date-io/date-fns';
 import { DateTimePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
 
-
 function AddTraining (props) {
     const [open, setOpen] = useState(false);
     const [selectedDate, handleDataChange] = useState(new Date());
@@ -36,7 +35,6 @@ function AddTraining (props) {
         props.addTraining({...training, customer: props.params.data.links[0].href});
         handleClose();
     }
-
 
     return(
         <div>
@@ -67,8 +65,6 @@ function AddTraining (props) {
                         label="Duration"
                         fullWidth
                     />
-
-
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose} color="primary">
