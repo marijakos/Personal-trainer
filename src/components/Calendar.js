@@ -63,8 +63,6 @@ function MyCalendar()  {
             components={{
                 timeSlotWrapper: ColoredDateCellWrapper,
               }}
-
-
             style={{ height: 800, paddingTop: 30 }}
         />
     )

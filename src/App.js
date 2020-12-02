@@ -97,7 +97,7 @@ function App() {
             onClose={handleOnClose}
           >
 
-            <StyledMenuItem onClose={handleOnClose} onClick={() => setValue(1)} >
+            <StyledMenuItem onClose={handleOnClose} onClick={ () => {setValue(1); handleOnClose();} } >
               <ListItemIcon>
                 <PeopleOutlineIcon fontSize="small" />
               </ListItemIcon>
@@ -105,14 +105,14 @@ function App() {
             </StyledMenuItem>
 
 
-            <StyledMenuItem onClose={handleOnClose} onClick={() => setValue(2)}>
+            <StyledMenuItem onClose={handleOnClose} onClick={ () => {setValue(2); handleOnClose();} }>
               <ListItemIcon>
                 <DirectionsRunIcon fontSize="small" />
               </ListItemIcon>
               <ListItemText primary="Trainings"/>
             </StyledMenuItem>
 
-            <StyledMenuItem onClose={handleOnClose} onClick={() => setValue(3)}>
+            <StyledMenuItem onClose={handleOnClose} onClick={ () => {setValue(3); handleOnClose();} }>
               <ListItemIcon>
                 <EventIcon fontSize="small" />
               </ListItemIcon>
