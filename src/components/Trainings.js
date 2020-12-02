@@ -13,6 +13,7 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import MuiAlert from '@material-ui/lab/Alert';
 
+
 function Alert(props) {
     return <MuiAlert elevation={6} variant="filled"  {...props} />;
 }
@@ -103,6 +104,8 @@ function Trainings () {
     }
 
 
+
+
     const handleClose = () => {
         setOpen(false);
     }
@@ -154,7 +157,7 @@ function Trainings () {
                 rowSelection="single"
                 animateRows="true"
                 pagination={true}
-                paginationPageSize={5}
+                paginationPageSize={10}
 
             >
             </AgGridReact>

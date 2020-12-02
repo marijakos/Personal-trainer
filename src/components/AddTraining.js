@@ -37,6 +37,7 @@ function AddTraining (props) {
         handleClose();
     }
 
+
     return(
         <div>
             <Button  color="primary" onClick={handleClickOpen}>
@@ -53,6 +54,7 @@ function AddTraining (props) {
                         margin="dense"
                         label="Activity"
                         fullWidth
+
                     />
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <DateTimePicker label = "Next treining" value={selectedDate} onChange={dateChanged => setTraining({...training, date: dateChanged.toISOString()})}/>

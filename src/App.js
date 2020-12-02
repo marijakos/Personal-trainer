@@ -1,6 +1,7 @@
 import './App.css';
 import Customers from './components/Customers';
 import Trainings from './components/Trainings';
+import BasicCalendar from './components/Calendar';
 
 import AppBar from '@material-ui/core/AppBar';
 import { IconButton, InputBase, Toolbar } from '@material-ui/core';
@@ -17,6 +18,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import EventIcon from '@material-ui/icons/Event';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { useState } from 'react';
+//import { Calendar } from '@material-ui/pickers';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -110,7 +112,7 @@ function App() {
               <ListItemText primary="Trainings"/>
             </StyledMenuItem>
 
-            <StyledMenuItem onClose={handleOnClose} >
+            <StyledMenuItem onClose={handleOnClose} onClick={() => setValue(3)}>
               <ListItemIcon>
                 <EventIcon fontSize="small" />
               </ListItemIcon>
@@ -125,6 +127,7 @@ function App() {
       </AppBar>
       {value === 1 && <Customers/>}
       {value === 2 && <Trainings/>}
+      {value === 3 && <BasicCalendar />}
     </Router>
   );
 }
